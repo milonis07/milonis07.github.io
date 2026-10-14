@@ -1,19 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Miloni Shah — Data Analyst</title>
   <meta name="description" content="Miloni Shah — Data Analyst & MSBA Candidate at Babson College.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
   <style>
-    .site-header { text-align: center; padding-block: 2rem 1rem; }
-    .site-header h1 { margin-bottom: 0.25rem; }
-    .contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1rem; margin-top: 1rem; }
+    :root {
+      --pico-font-family: "Inter", system-ui, sans-serif;
+      --navy: #1c2b4a;
+      --navy-light: #2e4370;
+      --gold: #b08d57;
+      --cream: #f6f4ef;
+      --card-bg: #ffffff;
+      --pico-background-color: var(--cream);
+      --pico-color: #28303d;
+      --pico-primary: var(--navy);
+      --pico-primary-hover: var(--navy-light);
+      --pico-primary-background: var(--navy);
+      --pico-primary-hover-background: var(--navy-light);
+      --pico-primary-border: var(--navy);
+      --pico-primary-focus: rgba(28, 43, 74, 0.25);
+      --pico-h1-color: var(--navy);
+      --pico-h2-color: var(--navy);
+      --pico-h3-color: var(--navy-light);
+    }
+    body { background: var(--cream); }
+    h1, h2, h3 { font-family: "Source Serif 4", Georgia, serif; }
+
+    .site-header {
+      text-align: center;
+      padding-block: 3rem 2rem;
+      background: linear-gradient(180deg, var(--navy) 0%, var(--navy-light) 100%);
+      border-radius: 0 0 1.25rem 1.25rem;
+      margin-bottom: 2rem;
+      color: #fff;
+    }
+    .site-header h1 { color: #fff; margin-bottom: 0.25rem; letter-spacing: 0.01em; }
+    .site-header p { color: #e4e9f2; font-size: 1.05rem; }
+    .contact-links { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.6rem 1rem; margin-top: 1.25rem; }
+    .contact-links a[role="button"] {
+      --pico-primary-inverse: var(--navy);
+      background: #fff; color: var(--navy); border-color: #fff;
+    }
+    .contact-links a[role="button"]:hover { background: var(--gold); border-color: var(--gold); color: #fff; }
+    .contact-links span { color: #e4e9f2; }
+
+    section { margin-bottom: 2.5rem; }
+    section > h2 {
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.25rem;
+    }
+
+    article {
+      background: var(--card-bg);
+      border: 1px solid #e3ddd0;
+      border-radius: var(--pico-border-radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 3px rgba(28, 43, 74, 0.06);
+    }
     article header h3 { margin-bottom: 0.1rem; }
     .role-meta { color: var(--pico-muted-color); font-size: 0.9rem; margin-bottom: 0.5rem; }
-    .tag-list { display: flex; flex-wrap: wrap; gap: 0.4rem; padding: 0; list-style: none; }
-    .tag-list li { background: var(--pico-secondary-background); border-radius: var(--pico-border-radius); padding: 0.2rem 0.6rem; font-size: 0.9rem; }
+
+    .tag-list { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; list-style: none; }
+    .tag-list li {
+      background: var(--navy);
+      color: #fff;
+      border-radius: 999px;
+      padding: 0.3rem 0.85rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
     footer { text-align: center; color: var(--pico-muted-color); padding-block: 2rem; }
   </style>
 </head>
